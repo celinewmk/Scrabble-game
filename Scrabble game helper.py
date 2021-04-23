@@ -34,7 +34,6 @@ def clean_word(word):
     'bornym'
 
     '''
-    #YOUR CODE GOES HERE
     word = word.lower()
     string=''
     for x in word:
@@ -58,8 +57,6 @@ def test_letters(w1, w2):
     >>> test_letters("teen", "need")
     False
     '''
-    
-    #YOUR CODE GOES HERE
     w1 = list(w1)
     w2 = list(w2)
     w1.sort()
@@ -86,8 +83,6 @@ def create_clean_sorted_nodupicates_list(s):
     >>> create_clean_sorted_nodupicates_list('Across Europe, infection rates are rising, with Russia reporting a record 14,321 daily cases on Wednesday and a further 239 deaths.')
     ['', 'a', 'across', 'and', 'are', 'cases', 'daily', 'deaths', 'europe', 'further', 'infection', 'on', 'rates', 'record', 'reporting', 'rising', 'russia', 'wednesday', 'with']
     '''
-    
-    #YOUR CODE GOES HERE
     s = s.split()
     new_list = []
     for i in range(len(s)):
@@ -123,8 +118,6 @@ def word_anagrams(word, wordbook):
     >>> word_anagrams("ear", wordbook)
     ['are', 'era']
     '''
-    
-    #YOUR CODE GOES HERE
     new_list = []
     for i in range(len(wordbook)):  
         if test_letters(word,wordbook[i])==True and word!=wordbook[i]:
